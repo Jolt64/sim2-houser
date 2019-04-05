@@ -13,6 +13,7 @@ class Dashboard extends Component {
             HousesArr: []
         }
         this.deleteHouse = this.deleteHouse.bind(this)
+        this.getAllHouses = this.getAllHouses.bind(this)
     }
 
     componentDidMount(){

@@ -8,6 +8,40 @@ CREATE TABLE houses (
     img TEXT,
     mortgage DECIMAL,
     rent DECIMAL
-)
+);
 
 
+INSERT INTO houses (
+name,
+address,
+city,
+state,
+zip,
+img,
+mortgage,
+rent
+) VALUES (
+'springville houses',
+'1173 south 1190 east',
+'springville',
+'UT',
+84663,
+'https://m1.cbhomes.com/p/952/1578498/2E9A721E6ADd4F0/pdl23tp.jpg',
+1200,
+1200
+);
+
+
+delete from houses
+where id = 3;
+
+select * from houses;
+
+
+select * from houses;
+
+
+ALTER TABLE houses
+ADD COLUMN img text
+ADD COLUMN mortgage DECIMAL
+ADD COLUMN rent DECIMAL;
